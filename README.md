@@ -1,5 +1,7 @@
 # Devcamp Portfolio README
 
+## This repo has been created to document my progress on the Dissecting Ruby on Rails 5 course
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
