@@ -25,5 +25,21 @@ end
         title: "Skill #{skill}",
         percent_utilized: 15 
     )
+end
 
+9.times do |portfolio|
+    Portfolio.create!(
+        title: "Portfolio title: #{portfolio}",
+        subtitle: "My cool portfolio",
+        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna 
+        aliqua. Sit amet consectetur adipiscing elit pellentesque 
+        habitant morbi tristique senectus. Cursus turpis massa tincidunt 
+        dui ut ornare. Lectus magna fringilla urna porttitor rhoncus. 
+        Sed elementum tempus egestas sed sed risus pretium. Phasellus 
+        faucibus scelerisque eleifend donec pretium vulputate sapien nec 
+        sagittis. A arcu cursus vitae congue mauris rhoncus aenean vel.",
+        main_image: "https://via.placeholder.com/600x400" , 
+        thumb_image: "https://via.placeholder.com/350x200"
+    )
 end
