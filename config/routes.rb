@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   # resources makes models available for crud actions everywhere 
-  resources :portfolios
+  resources :portfolios, except: [:show]
   resources :blogs
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
