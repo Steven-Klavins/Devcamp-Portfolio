@@ -6,6 +6,7 @@
 
 * rails 6.1.3
 * ruby 3.0.0
+* friendly_id
 
 ## How to run 
 **Before running the project ensure you run** 
