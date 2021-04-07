@@ -6,6 +6,14 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+3.times do |topic|
+    Topic.create!(
+        title: "Topic #{topic}"
+    )
+end
+
+puts "3 Topics created"
+
 10.times do |blog|
   Blog.create!(
       title: "My blog post #{blog}", 
@@ -16,7 +24,8 @@
         dolor in reprehenderit in voluptate velit esse cillum dolore eu
         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
         proident, sunt in culpa qui officia deserunt mollit anim id est 
-        laborum."
+        laborum.",
+        topic_id: Topic.last.id
   )
 end
 
@@ -27,10 +36,27 @@ end
     )
 end
 
-9.times do |portfolio|
+8.times do |portfolio|
     Portfolio.create!(
         title: "Portfolio title: #{portfolio}",
-        subtitle: "My cool portfolio",
+        subtitle: "Ruby on Rails",
+        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna 
+        aliqua. Sit amet consectetur adipiscing elit pellentesque 
+        habitant morbi tristique senectus. Cursus turpis massa tincidunt 
+        dui ut ornare. Lectus magna fringilla urna porttitor rhoncus. 
+        Sed elementum tempus egestas sed sed risus pretium. Phasellus 
+        faucibus scelerisque eleifend donec pretium vulputate sapien nec 
+        sagittis. A arcu cursus vitae congue mauris rhoncus aenean vel.",
+        main_image: "https://via.placeholder.com/600x400" , 
+        thumb_image: "https://via.placeholder.com/350x200"
+    )
+end
+
+1.times do |portfolio|
+    Portfolio.create!(
+        title: "Portfolio title: #{portfolio}",
+        subtitle: "Angular",
         body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
         sed do eiusmod tempor incididunt ut labore et dolore magna 
         aliqua. Sit amet consectetur adipiscing elit pellentesque 
