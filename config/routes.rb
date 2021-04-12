@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   # resources makes models available for crud actions everywhere 
   resources :portfolios, except: [:show]
   get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
