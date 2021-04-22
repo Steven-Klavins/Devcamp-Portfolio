@@ -10,7 +10,8 @@
 * ruby 3.0.0
 * friendly_id
 * devise 4.2
-* bootstrap 4.0.0.alpha6
+* bootstrap ^4.6.0
+* jquery ^3.6.0
 
 ## How to run 
 **Before running the project ensure you run** 
