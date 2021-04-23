@@ -15,4 +15,8 @@ def source_helper (layout_name)
         content_tag(:p, greeting, class: "source-greeting" )
      end 
    end
+
+def copyright_generator 
+    SkViewTool::Renderer.copyright 'Steven Klavins', 'All rights reserved'
+end
 end
