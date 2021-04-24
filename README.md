@@ -8,10 +8,11 @@
 
 * rails 6.1.3
 * ruby 3.0.0
-* friendly_id
+* friendly_id 5.4.0
 * devise 4.2
 * bootstrap ^4.6.0
 * jquery ^3.6.0
+* gem petergate 1.6.3
 
 ## How to run 
 **Before running the project ensure you run** 
