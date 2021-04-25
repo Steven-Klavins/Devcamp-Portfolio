@@ -54,7 +54,21 @@ body {
   width: 55em;
 }
 
+.map {
+  padding: 0;
+  margin: 0;
+}
 
+.contact {
+  float: left;
+  max-width: 300px;
+  margin-right: 180px;
+}
+
+.contact ul {
+  padding: 0;
+  list-style: none;
+}
 /*
  * Header
  */
