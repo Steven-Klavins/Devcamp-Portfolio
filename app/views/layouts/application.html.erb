@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><%= @page_title %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <meta name="keywords" content="<%= @seo_keywords %>" />
-
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag "application", media: "all", 'data-turbolinks-track': "reload" %>
+    <%= stylesheet_pack_tag "application", media: "all", 'data-turbolinks-track': "reload" %>
+    <%= javascript_pack_tag "application", 'data-turbolinks-track': "reload" %>
   </head>
-
   <body>
-    <%# Default flash messages for devise %>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-
-  <%= render "shared/nav", location: 'top' %>
-
-  <%= login_helper %>
-
-  <%= yield %>
-
-  <%= copyright_generator %>
-
-  <%= source_helper("application") %>
-
+    <% # Default flash messages for devise %>
+    <main role="main" class="inner cover">
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <%= render "shared/application_nav" %>
+      <%= yield %>
+      <%= source_helper("application") %>
+      <%= render "shared/application_footer" %>
+    </div>
+    </main>
   </body>
 </html>
