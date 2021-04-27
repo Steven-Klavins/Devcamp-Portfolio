@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   resources :blogs do
     member do # Member is the keyword that you use whenever you want to add a custom route (in this case to toggle_status method) 
-      post :toggle_status # Toggle post(post request is reccoment) calls toggle_status
+      get :toggle_status # Toggle post(post request is reccoment) calls toggle_status
     end
   end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
@@ -25,3 +25,6 @@ Rails.application.routes.draw do
    get 'contact', to: 'pages#contact'
 
 end
+
+
+
