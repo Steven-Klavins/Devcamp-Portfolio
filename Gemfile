@@ -51,3 +51,5 @@ gem 'friendly_id', '~> 5.4.0'
 gem 'devise', '~> 4.2'
 gem 'sk_view_tool', git: "https://github.com/Steven-Klavins/sk_view_tool"
 gem 'petergate', '~> 1.6', '>= 1.6.3'
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
+gem 'kaminari', '~> 1.0', '>= 1.0.1'
