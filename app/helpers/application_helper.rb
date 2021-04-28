@@ -19,3 +19,4 @@ module ApplicationHelper
     SkViewTool::Renderer.copyright "Steven Klavins", "All rights reserved"
   end
 end
+
