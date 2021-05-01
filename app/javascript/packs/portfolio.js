@@ -6,6 +6,7 @@ import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import "bootstrap"
 import "packs/html.sortable"
+import { ready } from "jquery"
 require('webpack-jquery-ui');
 require('webpack-jquery-ui/css');
 
@@ -17,3 +18,9 @@ document.addEventListener("turbolinks:load", () => {
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+
+// On document load find each item with css class .sortable and call sortable method
+document.addEventListener('turbolinks:load', () => {
+    $('.sortable').sortable()
+})
