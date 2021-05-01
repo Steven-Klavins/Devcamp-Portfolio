@@ -9,6 +9,8 @@ Despite the course being based on rails 5, I built this application in Rails 6 w
 
 ## Dependencies 
 
+### Gems                      
+
 * rails 6.1.3
 * ruby 3.0.0
 * friendly_id 5.4.0
@@ -34,6 +36,12 @@ bundle install
 
 ```
 rails db:migrate 
+```
+
+**Install Yarn dependencies**
+
+```
+yarn install
 ```
 
 **Finally run** 
