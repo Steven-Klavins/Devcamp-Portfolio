@@ -1,8 +1,11 @@
 # Devcamp Portfolio 
 
-## This repo has been created to document my progress on the [Dissecting Ruby on Rails 5 course](https://www.udemy.com/course/professional-rails-5-development-course/).
+## About
+This repo has been created to document my progress on the [Dissecting Ruby on Rails 5 course](https://www.udemy.com/course/professional-rails-5-development-course/).
 
-## Course completion: <font color='yellow'>50%</font>
+Despite the course being based on rails 5, I built this application in Rails 6 with a modernized approach. I took the course as a refresher on the framework to accommodate my new job role, regardless of its age the course still covers a mountain of useful information regarding best practices and the Rails ecosystem.
+
+## Course completion: <font color='yellow'>65%</font>
 
 ## Dependencies 
 
