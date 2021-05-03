@@ -53,3 +53,7 @@ gem 'sk_view_tool', git: "https://github.com/Steven-Klavins/sk_view_tool"
 gem 'petergate', '~> 1.6', '>= 1.6.3'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
 gem 'kaminari', '~> 1.0', '>= 1.0.1'
+gem 'carrierwave-aws', '~> 1.1'
+gem 'mini_magick', '~> 4.6'
+gem 'carrierwave-aws', '~> 1.1'
+gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
