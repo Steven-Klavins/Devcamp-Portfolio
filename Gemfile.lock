@@ -267,7 +267,7 @@ DEPENDENCIES
   byebug
   carrierwave-aws (~> 1.1)
   devise (~> 4.2)
-  dotenv-rails (~> 2.1, >= 2.1.1)
+  dotenv-rails
   font-awesome-rails (~> 4.7, >= 4.7.0.5)
   friendly_id (~> 5.4.0)
   jbuilder (~> 2.7)
