@@ -31,9 +31,11 @@
   <h2>Technologies Used:</h2>
   <div>
     <%= f.fields_for :technologies do |technology_form| %>
-      <div><%= technology_form.label :name %></div>
-      <div><%= technology_form.text_field :name, class: 'form-control' %></div>
+      <%= render 'technology_fields', f: technology_form %>
     <% end %>
+    <div>
+    <%= link_to_add_association 'Add Technology', f, :technologies %>
+    </div>
   </div>
   <br>
   <div class="form-group">
