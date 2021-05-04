@@ -9,6 +9,7 @@ import "packs/html.sortable";
 import { ready } from "jquery";
 require("webpack-jquery-ui");
 require("webpack-jquery-ui/css");
+require("@nathanvda/cocoon")
 
 document.addEventListener("turbolinks:load", () => {
   $('[data-toggle="tooltip"]').tooltip();
