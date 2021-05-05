@@ -7,6 +7,7 @@ import "channels";
 import "bootstrap";
 import "packs/html.sortable";
 import { ready } from "jquery";
+import 'sweetalert'
 require("webpack-jquery-ui");
 require("webpack-jquery-ui/css");
 require("@nathanvda/cocoon")
