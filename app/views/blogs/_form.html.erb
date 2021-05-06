@@ -1,12 +1,10 @@
 <%= form_with(model: blog) do |form| %>
   <% if blog.errors.any? %>
-    <% flash.each do |type, msg| %>
-      <div class="alert alert-info">
-        <% blog.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </div>
-    <% end %>
+    <div class="alert alert-info">
+      <% blog.errors.full_messages.each do |error| %>
+        <li><%= error %></li>
+      <% end %>
+    </div>
   <% end %>
   <div class="form-group">
     <%= form.text_field :title, class: "form-control", placeholder: 'Title' %>
