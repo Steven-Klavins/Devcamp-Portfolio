@@ -1,12 +1,10 @@
 <%= form_for(@portfolio_item) do |f| %>
-  <% if @portfolio_item.errors.any? %>
-    <% flash.each do |type, msg| %>
-      <div class="alert alert-info">
-        <% @portfolio_item.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </div>
-    <% end %>
+    <% if @portfolio_item.errors.any? %>
+    <div class="alert alert-info">
+      <% @portfolio_item.errors.full_messages.each do |error| %>
+        <li><%= error %></li>
+      <% end %>
+    </div>
   <% end %>
   <div class="row">
     <div class="col-md-6">
