@@ -21,6 +21,13 @@ Despite the course being based on rails 5, I built this application in Rails 6 w
 * font-awesome-rails 4.7
 * kaminari 1.0
 
+### Features
+* Login/Sign Up 
+* CRUD Blogs
+* CRUD Portfolios
+* Drag and drop portfolio cards
+* AWS Image Uploader
+
 ## How to run 
 **Before running the project ensure you run** 
 
