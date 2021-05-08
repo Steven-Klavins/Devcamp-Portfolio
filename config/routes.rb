@@ -25,6 +25,7 @@ Rails.application.routes.draw do
 
    #The same again for contacts
    get 'contact', to: 'pages#contact'
+   get 'tech-news', to: 'pages#tech_news'
 
 end
 
