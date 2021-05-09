@@ -180,3 +180,24 @@ body {
  .app-footer {
    color: rgb(255, 255, 255);
  }
+
+ .tech-news{
+   color: black;
+   margin: 20px;
+ }
+
+ .tech-news a{
+  color: rgb(4, 129, 160);
+}
+
+.tech-news > .card{
+  padding: 30px;
+}
+
+.nav-link-spacer {
+  margin-left: 12px;
+}
+
+.twitter-feed {
+  margin-top: 30px;
+}
