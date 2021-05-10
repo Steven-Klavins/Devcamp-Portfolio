@@ -2,11 +2,14 @@
   <div class = "card">
     <div class = "card-block">
       <div class = "row">
-        <div class = "col-md-1" >
+        <div class = "col-md-2" >
+        <%= gravatar_helper(comment.user)%>
         </div>
-        <div class = "col-md-11" >
-          <%= "#{user_name(comment.user_id)}:"%>
+        <div class = "col-md-10" >
+          <span class ="comment_title"> <%= "#{user_name(comment.user_id)}" %></span> <%= "(Posted #{distance_of_time_in_words(comment.created_at, Time.now)})"%>
+          <div class="comment-body">
           <%= comment.content%>
+          </div>
         </div>
       </div>
     </div>
