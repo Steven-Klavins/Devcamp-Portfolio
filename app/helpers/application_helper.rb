@@ -58,3 +58,6 @@ nav_links.html_safe
   end
   end
 
+  def user_name (id) 
+    User.find(id).name
+  end
