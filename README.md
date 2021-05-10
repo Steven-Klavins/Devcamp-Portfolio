@@ -5,7 +5,7 @@ This repo has been created to document my progress on the [Dissecting Ruby on Ra
 
 Despite the course being based on rails 5, I built this application in Rails 6 with a modernized approach. I took the course as a refresher on the framework to accommodate my new job role. Regardless of its age the course still covers a mountain of useful information regarding best practices and the Rails ecosystem.
 
-## Course completion: 75%
+## Course completion: 80%
 
 ## Dependencies 
 
@@ -28,6 +28,7 @@ Despite the course being based on rails 5, I built this application in Rails 6 w
 * Drag and drop portfolio cards
 * AWS Image Uploader
 * Live Twitter Feed
+* Live Action Cable Commenting 
 
 ## How to run 
 **Before running the project ensure you run** 

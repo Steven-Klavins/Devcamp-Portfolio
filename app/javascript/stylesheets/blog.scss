@@ -162,6 +162,7 @@
     text-align: center;
     background-color: #f9f9f9;
     border-top: .05rem solid #e5e5e5;
+    margin-top: 20px;
   }
   .blog-footer p:last-child {
     margin-bottom: 0;
@@ -177,4 +178,17 @@
     font-weight: 400;
     line-height: 1.5;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  .comment-card > .card {
+    margin-top: 15px;
+  }
+
+  .comment-body {
+    font: 8em;
+    font-style: italic;
+  }
+
+  .comment_title {
+    font-weight: 700;
   }

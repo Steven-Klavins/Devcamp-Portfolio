@@ -1,0 +1,10 @@
+  <% unless current_user.is_a? GuestUser %>
+  <%= form_for @comment do |f|%>
+    <div class = "form-group">
+      <%= f.label :content %>
+      <%= f.text_area :content, class: 'form-control' %>
+      <%= f.submit 'Post Comment', class: 'btn btn-primary' %>
+      <%= hidden_field_tag(:blog_id, @blog.id) %> <%# We need this to pass the id to comments controller%>
+    </div>
+  <% end %>
+<% end %>
