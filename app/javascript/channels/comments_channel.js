@@ -11,7 +11,7 @@ consumer.subscriptions.create("CommentsChannel", {
 
   received(data) {
     $('#newly-posted-msg').append (
-      '<div class="comment-card"><div class="card"><div class="card-block"><div class="row"><div class="col-md-1"></div><div class="col-md-11">'+ data.content +'</div></div></div></div></div>')
+      '<div class="comment-card"><div class="card"><div class="card-block"><div class="row"><div class="col-md-2"></div><div class="col-md-10">'+ data.content +'</div></div></div></div></div>')
     $('#comment_content').val('')
     $('input[type="submit"]').attr('disabled' , false);
   }
