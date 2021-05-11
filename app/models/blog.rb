@@ -7,4 +7,5 @@ class Blog < ApplicationRecord
   
   belongs_to :topic
   has_many :comments, dependent: :destroy
+  scope :most_recent_first, -> {order(created_at: :DESC)}
 end
