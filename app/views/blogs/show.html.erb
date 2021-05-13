@@ -1,5 +1,16 @@
 <div class="col-sm-8 blog-main">
   <h2><%= @blog.title %></h2>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class = "breadcrumb-item" ><%= link_to "Home", root_path %></li>
+      <li class = "breadcrumb-item" ><%= link_to @blog.topic.title, topic_path(@blog.topic) %></li>
+      <li class="breadcrumb-item active" aria-current="page"> <%= @blog.title %> </li>
+      <span class= "ml-5 ml-auto">
+        <%= link_to fa_icon('pencil-square-o'), edit_blog_path(@blog) if logged_in?(:site_admin)%>
+        <%= link_to fa_icon('trash'), @blog, method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin)%>
+      </span>
+    </ol>
+  </nav>
   <%= link_to "Edit", edit_blog_path(@blog) if logged_in?(:site_admin) %>
   <p>
     <%= @blog.topic.title %>
@@ -7,16 +18,10 @@
   <p>
     <%= markdown @blog.body %>
   </p>
-
-<%= render 'comments/comment_form'%>
-
-<div id = "comments">
-<div id = "newly-posted-msg"> 
-
+  <%= render 'comments/comment_form'%>
+  <div id = "comments">
+    <div id = "newly-posted-msg">
+    </div>
+    <%= render @blog.comments %>
+  </div>
 </div>
-<%= render @blog.comments %>
-</div>
-
-</div>
-
-
