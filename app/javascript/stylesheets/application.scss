@@ -201,3 +201,23 @@ body {
 .twitter-feed {
   margin-top: 30px;
 }
+
+.app-card-container {
+  color: rgb(0, 0, 0);
+}
+
+.app-card-container a {
+  color: #007bff;
+}
+
+.app-card-container > .card {
+  padding: 30px;
+}
+
+.profile-text {
+  margin-left: 18px;
+}
+
+.spacer {
+  border: none;
+}
