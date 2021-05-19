@@ -37,6 +37,7 @@ The following environment variables will need to be added to a .env file in the
 For more information on how to generate your own keys visit:
 
 [Twitter API Docs](https://developer.twitter.com/en/docs)
+
 [AWS S3 Docs](https://docs.aws.amazon.com/s3/index.html)
 
 Your .env will need to be formatted as follows:
