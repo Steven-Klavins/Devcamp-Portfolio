@@ -31,6 +31,26 @@ Despite the course being based on rails 5, I built this application in Rails 6 w
 * Live Action Cable Commenting 
 
 ## How to run 
+
+### Note
+The following environment variables will need to be added to a .env file in the projects root directory, the project requires an AWS S3 bucket and Twitter API keys.
+For more information on how to generate your own keys visit:
+
+[Twitter API Docs](https://developer.twitter.com/en/docs)
+[AWS S3 Docs](https://docs.aws.amazon.com/s3/index.html)
+
+Your .env will need to be formatted as follows:
+
+S3_BUCKET_NAME=your-bucket-name
+AWS_ACCESS_KEY_ID=XXXXXXXXXXXXXXXXXXXX
+AWS_SECRET_ACCESS_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+AWS_REGION=your-region-#
+
+TWITTER_CONSUMER_KEY=XXXXXXXXXXXXXXXXXXXXXXXXX
+TWITTER_CONSUMER_SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+TWITTER_ACCESS_TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+TWITTER_ACCESS_TOKEN_SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
 **Before running the project ensure you run** 
 
 ```
