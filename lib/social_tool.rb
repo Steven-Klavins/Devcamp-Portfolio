@@ -7,7 +7,7 @@ module SocialTool
       config.access_token_secret = ENV.fetch("TWITTER_ACCESS_TOKEN_SECRET")
     end
 
-    client.search("#coding", result_type: 'recent', tweet_mode: 'extended').take(6).collect do |tweet|
+    client.search("#rubyonrails", result_type: 'recent', tweet_mode: 'extended').take(6).collect do |tweet|
         if tweet.truncated? && tweet.attrs[:extended_tweet]
     "#{tweet.user.screen_name}: #{tweet.attrs[:extended_tweet].full_text}" 
 else
