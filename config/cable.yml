@@ -7,5 +7,5 @@ test:
 
 production:
   adapter: redis
-  url: redis://redistogo:0ba72d7e4577e02e120929234a471d24@spinyfin.redistogo.com:9803/
+  url: <%= ENV[REDIS_URL] %>
   channel_prefix: Devcamp_Portfolio_production
