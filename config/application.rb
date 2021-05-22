@@ -24,7 +24,7 @@ module DevcampPortfolio
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
     config.generators.system_tests = nil
-
+    config.assets.initialize_on_precompile = false
     config.eager_load_paths << "#{Rails.root}/lib"
   end
 end
