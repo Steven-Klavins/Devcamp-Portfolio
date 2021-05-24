@@ -9,7 +9,7 @@ Despite the course being based on rails 5, I built this application in Rails 6 w
 ## Deployment
 Deployment of the app was done via Heroku, using the redistogo addon.
  
-Visit the app here (https://sk-devcamp-portfolio.herokuapp.com/)
+[Visit the app here](https://sk-devcamp-portfolio.herokuapp.com/)
 
 ## Course completion: 90%
 
