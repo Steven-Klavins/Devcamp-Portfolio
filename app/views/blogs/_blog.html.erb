@@ -5,7 +5,7 @@
    
   <%= render partial: 'blogs/admin_actions', locals: {blog: blog} %>
 
-  <p><%= blog.body %></p>
+  <p><%= "#{blog.body.first(500)}..." %></p>
 
 </div>
 <%# we set this to a post here it is not reccomened to do this in controller as it that can allow values to easily be tampered with %>
