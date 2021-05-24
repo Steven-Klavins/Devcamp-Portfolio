@@ -22,6 +22,7 @@ Bundler.require(*Rails.groups)
 module DevcampPortfolio
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
+    config.assets.initialize_on_precompile = false
     config.load_defaults 6.1
     config.generators.system_tests = nil
     config.eager_load_paths << "#{Rails.root}/lib"
