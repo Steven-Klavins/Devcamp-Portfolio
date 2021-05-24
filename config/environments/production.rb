@@ -118,6 +118,6 @@ Rails.application.configure do
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
 
-  config.web_socket_server_url = "redis://redistogo:0ba72d7e4577e02e120929234a471d24@spinyfin.redistogo.com:9803/"
+  config.web_socket_server_url = ENV.fetch('REDIS_URL') 
   config.action_cable.allowed_request_origins = ['https://sk-devcamp-portfolio.herokuapp.com/', 'https://sk-devcamp-portfolio.herokuapp.com/']
 end
