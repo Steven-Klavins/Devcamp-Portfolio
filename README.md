@@ -58,6 +58,11 @@ TWITTER_CONSUMER_SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 TWITTER_ACCESS_TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 TWITTER_ACCESS_TOKEN_SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
+Your cable.yml file will need the line the production URL changed to the following if your running the project locally. 
+
+``` <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %> 
+```
+
 **Before running the project ensure you run** 
 
 ```
