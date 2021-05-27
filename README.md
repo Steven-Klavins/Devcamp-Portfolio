@@ -11,7 +11,7 @@ Deployment of the app was done via Heroku, using the redistogo addon.
  
 [Visit the app here](https://sk-devcamp-portfolio.herokuapp.com/)
 
-## Course completion: 90%
+## Course completion: 95%
 
 ## Dependencies 
 
