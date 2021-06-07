@@ -26,6 +26,7 @@ gem 'jbuilder', '~> 2.7'
 
 group :development, :test do
   gem 'rspec-rails', '~> 5.0.0'
+  gem 'capybara'
 end
 
 # Use Active Storage variant
