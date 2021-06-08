@@ -9,34 +9,22 @@ I plan to add some RSpec testing shortly, perhaps set up a CI pipeline too.
 
 
 ## Deployment
-Deployment of the app was done via Heroku, using the redistogo addon.
+Deployment of the app was done via Heroku, using the [Redistogo addon](https://elements.heroku.com/addons/redistogo).
  
 [Visit the app here](https://sk-devcamp-portfolio.herokuapp.com/)
 
-## Course completion: 100%
 
-## Dependencies 
-
-### Gems                      
-
-* rails 6.1.3
-* ruby 3.0.0
-* friendly_id 5.4.0
-* devise 4.2
-* bootstrap 4.6.0
-* jquery 3.6.0
-* gem petergate 1.6.3
-* font-awesome-rails 4.7
-* kaminari 1.0
+## Course completion: ```` 100% ````
 
 ### Features
-* Login/Sign Up 
+* Login/Sign Up with varying admin/user permissions
 * CRUD Blogs
 * CRUD Portfolios
 * Drag and drop portfolio cards
 * AWS Image Uploader
 * Live Twitter Feed
 * Live Action Cable Commenting 
+* Categorization of blogs and portfolios
 
 ## How to run 
 
@@ -50,6 +38,7 @@ For more information on how to generate your own keys visit:
 
 Your .env will need to be formatted as follows:
 
+```
 S3_BUCKET_NAME=your-bucket-name
 AWS_ACCESS_KEY_ID=XXXXXXXXXXXXXXXXXXXX
 AWS_SECRET_ACCESS_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
@@ -60,9 +49,12 @@ TWITTER_CONSUMER_SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 TWITTER_ACCESS_TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 TWITTER_ACCESS_TOKEN_SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-Your cable.yml file will need the line the production URL changed to the following if your running the project locally. 
+```
 
-``` <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %> 
+Your cable.yml file will need the production URL changed to the following if your running the project locally. 
+
+``` 
+<%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %> 
 ```
 
 **Before running the project ensure you run** 
@@ -80,6 +72,11 @@ bundle install
 ```
 rails db:migrate 
 ```
+**Optionally run**
+
+```
+rails db:seed 
+```
 
 **Install Yarn dependencies**
 
@@ -92,3 +89,7 @@ yarn install
 rails s
 ```
 
+## Testing 
+Testing for models has been added using [RSpec](https://rspec.info/), these can be found in the spec directory.
+
+I am due to add [Capybara](https://github.com/teamcapybara/capybara) feature tests, these are due to be added in the near future.
