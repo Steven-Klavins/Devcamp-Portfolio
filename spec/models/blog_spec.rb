@@ -2,11 +2,11 @@ require "rails_helper"
 
 RSpec.describe Blog, type: :model do
 
-  before(:all) do
-    @topic = Topic.create(id: 1, title: "Topic")
+  before(:each) do
+    @topic = Topic.create(title: "Topic")
   end
 
-  it "Saves a valid blog to the database" do
+  it "lets the user create a valid blog" do
     blog = Blog.new(
       title: "My blog post",
       body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -15,7 +15,7 @@ RSpec.describe Blog, type: :model do
     expect(blog).to be_valid
   end
 
-  it "Does not save a blog without a valid title" do
+  it "does not let a user create a blog without a valid title" do
     blog = Blog.new(
       title: "My blog post",
       body: "",
