@@ -14,7 +14,7 @@ Deployment of the app was done via Heroku, using the [Redistogo addon](https://e
 [Visit the app here](https://sk-devcamp-portfolio.herokuapp.com/)
 
 
-## Course completion: ```` 100% ````
+## Course completion: 100% 
 
 ### Features
 * Login/Sign Up with varying admin/user permissions
