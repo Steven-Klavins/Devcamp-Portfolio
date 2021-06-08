@@ -24,4 +24,19 @@ RSpec.describe Blog, type: :model do
     expect(blog).to_not be_valid
   end
 
+  it "does not let a user create a blog without a topic id" do
+    blog = Blog.new(
+    title: "My blog post",
+    body: "",
+    )
+    expect(blog).to_not be_valid
+  end
+
+  it "does not let a user create a blog without a valid length of body characters" do
+    blog = Blog.new(
+    title: "My blog post",
+    body: "Two words",
+    )
+    expect(blog).to_not be_valid
+  end
 end
