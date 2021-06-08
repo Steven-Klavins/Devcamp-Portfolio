@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.describe Portfolio, type: :model do
   it "lets the user create a valid portfolio item" do
     portfolio = Portfolio.new(
-      title: "Portfolio title",
+      title: "Portfolio",
       subtitle: "Angular",
       body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna 
@@ -14,7 +14,7 @@ RSpec.describe Portfolio, type: :model do
     expect(portfolio).to be_valid
   end
 
-  it "does not let a user create portfolio item without a valid title" do
+  it "does not let a user create a portfolio item without a valid title" do
     portfolio = Portfolio.new(
       title: "",
       subtitle: "Angular",
