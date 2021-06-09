@@ -92,4 +92,8 @@ rails s
 ## Testing 
 Testing for models has been added using [RSpec](https://rspec.info/), these can be found in the spec directory.
 
+**To run tests use**
+```
+bundle exec rspec
+```
 I am due to add [Capybara](https://github.com/teamcapybara/capybara) feature tests, these are due to be added in the near future.
