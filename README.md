@@ -93,4 +93,4 @@ Testing for models has been added using [RSpec](https://rspec.info/), these can 
 ```
 bundle exec rspec
 ```
-I am due to add [Capybara](https://github.com/teamcapybara/capybara) feature tests, these are due to be added in the near future.
+For [Capybara](https://github.com/teamcapybara/capybara) feature tests to run ensure your system has Google Chrome installed, alternatively update Capybara's default driver to use one of your choosing. This can be done in the feature test specs found in the [spec/features directory.](https://github.com/Steven-Klavins/Devcamp-Portfolio/tree/main/spec/features)
