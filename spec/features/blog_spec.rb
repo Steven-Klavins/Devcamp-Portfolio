@@ -14,6 +14,7 @@ RSpec.feature "SignUps", type: :feature do
         roles: "site_admin"
     )
     Topic.create!(title: "Topic 1")
+    Blog.delete_all
   end
 
   context "Creating and editing blogs" do 
@@ -56,6 +57,7 @@ RSpec.feature "SignUps", type: :feature do
     click_on('EXAMPLE TITLE')
     expect(page).to have_content 'Example Title'
     expect(page).to have_content "This is the updated text for the blog example!"
+    Blog.delete_all
     end
   end
 end
