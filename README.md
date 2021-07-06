@@ -22,6 +22,7 @@ Deployment of the app was done via Heroku, using the [Redistogo addon](https://e
 * Live Twitter Feed
 * Live Action Cable Commenting 
 * Categorization of blogs and portfolios
+* Gravatar profile images
 
 ## How to run 
 
