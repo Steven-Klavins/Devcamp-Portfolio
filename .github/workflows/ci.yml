@@ -54,4 +54,9 @@ jobs:
           bundle exec rails db:prepare 
           bundle exec rails test
 
+    env:
+      RAILS_ENV: test
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
 
