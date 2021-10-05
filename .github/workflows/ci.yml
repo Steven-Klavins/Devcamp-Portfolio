@@ -34,6 +34,8 @@ jobs:
           DATABASE_URL: postgres://postgres:@localhost:5432/test
           REDIS_URL: redis://localhost:6379/0
           RAILS_ENV: test
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: password
           RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_REGION: ${{ secrets.AWS_REGION }}
