@@ -17,6 +17,8 @@
 default: &default
   adapter: postgresql
   encoding: unicode
+  username: Devcamp_Portfolio
+  password: <%= ENV['DEVCAMP_PORTFOLIO_DATABASE_PASSWORD'] %>
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
@@ -58,8 +60,6 @@ development:
 test:
   <<: *default
   database: Devcamp_Portfolio_test
-  username: postgres
-  password: <%= ENV['DEVCAMP_PORTFOLIO_DATABASE_PASSWORD'] %>
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -84,7 +84,7 @@ test:
 production:
   <<: *default
   database: Devcamp_Portfolio_production
-  username: postgres
+  username: Devcamp_Portfolio
   password: <%= ENV['DEVCAMP_PORTFOLIO_DATABASE_PASSWORD'] %>
 
 
