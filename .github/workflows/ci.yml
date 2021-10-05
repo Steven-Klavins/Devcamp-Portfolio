@@ -26,6 +26,8 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.0.0
+      - uses: browser-actions/setup-chrome@latest
+      - run: chrome --version
       - uses: borales/actions-yarn@v2.3.0
         with:
           cmd: install
