@@ -58,7 +58,7 @@ development:
 test:
   <<: *default
   database: Devcamp_Portfolio_test
-  username: Devcamp_Portfolio
+  username: postgres
   password: <%= ENV['DEVCAMP_PORTFOLIO_DATABASE_PASSWORD'] %>
 
 # As with config/credentials.yml, you never want to store sensitive information,
@@ -84,7 +84,7 @@ test:
 production:
   <<: *default
   database: Devcamp_Portfolio_production
-  username: Devcamp_Portfolio
+  username: postgres
   password: <%= ENV['DEVCAMP_PORTFOLIO_DATABASE_PASSWORD'] %>
 
 
