@@ -1,4 +1,7 @@
 # Devcamp Portfolio 
+<p>
+  <a href="https://github.com/Steven-Klavins/Devcamp-Portfolio/actions"><img alt="typescript-action status" src="https://github.com/Steven-Klavins/Devcamp-Portfolio/workflows/CI/badge.svg"></a>
+</p>
 
 ## About
 This repo has been created to document my progress on the [Dissecting Ruby on Rails 5 course](https://www.udemy.com/course/professional-rails-5-development-course/).
