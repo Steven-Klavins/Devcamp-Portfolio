@@ -58,6 +58,8 @@ development:
 test:
   <<: *default
   database: Devcamp_Portfolio_test
+  username: Devcamp_Portfolio
+  password: <%= ENV['DEVCAMP_PORTFOLIO_DATABASE_PASSWORD'] %>
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -84,3 +86,5 @@ production:
   database: Devcamp_Portfolio_production
   username: Devcamp_Portfolio
   password: <%= ENV['DEVCAMP_PORTFOLIO_DATABASE_PASSWORD'] %>
+
+
