@@ -7,7 +7,7 @@ jobs:
       db: 
         image: postgres:latest
         env: 
-          POSTGRES_DB: test
+          POSTGRES_DB:  Devcamp_Portfolio_test
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
         ports: ['5432:5432']
@@ -32,7 +32,7 @@ jobs:
           cmd: install
       - name: Build and run tests
         env: 
-          POSTGRES_DB: test
+          POSTGRES_DB: Devcamp_Portfolio_test
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
           DATABASE_URL: postgres://postgres:@localhost:5432/test
@@ -54,9 +54,6 @@ jobs:
           bundle exec rails db:prepare 
           bundle exec rails test
 
-    env:
-      RAILS_ENV: test
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
+
 
 
